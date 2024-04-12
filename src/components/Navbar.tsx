@@ -1,3 +1,4 @@
+import ActionButton from '../ActionButton';
 import Logo from '../assets/Logo.png';
 import { SelectedPage } from '../types';
 import Links from './Links';
@@ -24,7 +25,7 @@ const Navbar = ({selectedPage,setselectedPage}: Props) => {
           
 
           <p className='m-1 p-2 relative ml-[40%]  font-bold'>Sign In</p>
-          <button className='m-1 p-2  bg-yellow-500 hovetext-red-400 rounded-lg'>Become Member</button>
+          <ActionButton setselectedPage={setselectedPage}>Become Member</ActionButton>
     </div>
     
   </div>
