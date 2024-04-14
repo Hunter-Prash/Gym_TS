@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import './App.css'
 import { SelectedPage } from './types';
 SelectedPage
+import Home from './components/Home';
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
@@ -12,6 +13,7 @@ function App() {
   return (
     <>
       <Navbar selectedPage={selectedPage} setselectedPage={setSelectedPage}/>
+      <Home setselectedPage={setSelectedPage}/>
     </>
   )
 }
